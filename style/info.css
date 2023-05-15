@@ -1,0 +1,17 @@
+div#info {
+  width: 100vw;
+  height: 100vh;
+  background-color: #111423;
+}
+div#info .footer-info {
+  position: fixed;
+  height: 50px;
+  background: aqua;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=info.css.map */
