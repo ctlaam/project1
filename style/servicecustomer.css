@@ -1,0 +1,40 @@
+#service {
+  padding: 0 2.5rem;
+  background-color: #111423;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#service .logo {
+  text-align: center;
+  padding: 2rem;
+}
+#service .list-service {
+  padding-top: 1.5rem;
+  min-height: 30rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#31385a), to(#111423));
+  font-size: 20px;
+  -webkit-border-radius: 5rem 5rem 0 0;
+  border-radius: 5rem 5rem 0 0;
+  margin-top: 2rem;
+  padding: 5rem;
+}
+#service .list-service .item-service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007aff;
+  padding: 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+#service .list-service .item-service:hover {
+  background-color: #40a9ff;
+  cursor: pointer;
+}
+#service .list-service span.name-service {
+  margin-left: 1rem;
+}
+
+/*# sourceMappingURL=servicecustomer.css.map */

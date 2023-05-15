@@ -104,9 +104,12 @@ menu,
 nav,
 section {
   display: block;
+  color: #fff;
 }
 body {
   line-height: 1;
+  color: #fff !important;
+
 }
 ol,
 ul {
@@ -130,4 +133,5 @@ table {
 
 html {
   font-size: 10px;
+  color: #fff;
 }

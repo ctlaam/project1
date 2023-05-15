@@ -98,5 +98,9 @@
   font-size: 3rem;
   color: #fff;
 }
+#login-form .notify {
+  font-size: 14px;
+  color: #fbaf30;
+}
 
 /*# sourceMappingURL=login.css.map */

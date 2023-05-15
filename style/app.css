@@ -104,11 +104,12 @@ menu,
 nav,
 section {
   display: block;
+  color: #fff;
 }
 
 body {
   line-height: 1;
-  font-family: "Instrument Sans", sans-serif;
+  color: #fff !important;
 }
 
 ol,
@@ -136,10 +137,7 @@ table {
 
 html {
   font-size: 10px;
+  color: #fff;
 }
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-  transition: background-color 600000s 0s, color 600000s 0s;
-}
+
 /*# sourceMappingURL=app.css.map */
-@import url("./login.css");
