@@ -1,0 +1,235 @@
+.invest {
+  .header {
+    padding: 2rem;
+    font-size: 2rem;
+    .green {
+      background-color: rgba(24, 139, 102, 0.2);
+      color: #188b66;
+    }
+    .red {
+      background-color: rgba(250, 130, 130, 0.2);
+      color: #b56161;
+    }
+    .chart {
+      float: right;
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+  .content {
+    padding: 2rem;
+    height: 50rem;
+    .part1 {
+      width: 60%;
+      height: 8rem;
+      float: left;
+      padding: 0.5rem;
+      .item {
+        text-align: center;
+        height: 3rem;
+        border: solid 1px #82848a;
+        line-height: 3rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        color: #82848a;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .item.header-part1 {
+        color: #fff;
+        font-weight: 400;
+        display: block;
+        background-color: #188b66;
+        border: solid 1px #188b66;
+      }
+      .list-item {
+        max-height: 32rem;
+        overflow-y: auto;
+      }
+      .list-item::-webkit-scrollbar {
+        width: 0; /* Ẩn thanh cuộn ngang trên trình duyệt Chrome, Safari */
+      }
+      .available {
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        justify-content: space-between;
+        padding: 2rem;
+        font-size: 1.2rem;
+      }
+      .input-number {
+        height: 3rem;
+        padding: 0 2rem;
+        border: solid 1px #82848a;
+        margin-bottom: 1rem;
+        input[type="number"] {
+          font-size: 16px;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          color: #ffff;
+          width: 100%;
+        }
+      }
+      button.btn.btn-success {
+        width: 100%;
+        font-size: 1.6rem;
+        background-color: #188b66;
+        border: solid 1px #188b66;
+      }
+    }
+    .part2 {
+      width: 40%;
+      height: 8rem;
+      float: right;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      .item {
+        margin-bottom: 0.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .red {
+          color: #b56161;
+        }
+        .green {
+          color: #188b66;
+        }
+        .right {
+          color: #fff;
+          border-radius: 2px;
+        }
+        .right.w-1 {
+          width: 10%;
+          line-height: 2.5rem;
+          height: 2.5rem;
+          background-color: rgba(250, 130, 130, 0.2);
+          padding: 0 0.5rem;
+          text-align: right;
+        }
+        .right.w-2 {
+          width: 20%;
+          line-height: 2.5rem;
+          height: 2.5rem;
+          background-color: rgba(250, 130, 130, 0.2);
+          padding: 0 0.5rem;
+          text-align: right;
+        }
+        .right.w-3 {
+          width: 30%;
+          line-height: 2.5rem;
+          height: 2.5rem;
+          background-color: rgba(250, 130, 130, 0.2);
+          padding: 0 0.5rem;
+          text-align: right;
+        }
+        .right.w-4 {
+          width: 40%;
+          line-height: 2.5rem;
+          height: 2.5rem;
+          background-color: rgba(250, 130, 130, 0.2);
+          padding: 0 0.5rem;
+          text-align: right;
+        }
+        .right.w-5 {
+          width: 50%;
+          line-height: 2.5rem;
+          height: 2.5rem;
+          background-color: rgba(250, 130, 130, 0.2);
+          padding: 0 0.5rem;
+          text-align: right;
+        }
+        .right.w-6 {
+          width: 60%;
+          line-height: 2.5rem;
+          height: 2.5rem;
+          background-color: rgba(250, 130, 130, 0.2);
+          padding: 0 0.5rem;
+          text-align: right;
+        }
+
+        .right.w-7 {
+          width: 70%;
+          line-height: 2.5rem;
+          height: 2.5rem;
+          background-color: rgba(250, 130, 130, 0.2);
+          padding: 0 0.5rem;
+          text-align: right;
+        }
+        .right.w-8 {
+          width: 80%;
+          line-height: 2.5rem;
+          height: 2.5rem;
+          background-color: rgba(250, 130, 130, 0.2);
+          padding: 0 0.5rem;
+          text-align: right;
+        }
+        .right.w-9 {
+          width: 90%;
+          line-height: 2.5rem;
+          height: 2.5rem;
+          background-color: rgba(250, 130, 130, 0.2);
+          padding: 0 0.5rem;
+          text-align: right;
+        }
+        .right.green {
+          background-color: rgba(24, 139, 102, 0.2);
+        }
+        .right.red {
+          background-color: rgba(250, 130, 130, 0.2);
+        }
+      }
+      .item.first-item {
+        display: block;
+        color: #188b66;
+      }
+      .end-part2 {
+        .total-today {
+          color: #188b66;
+          font-weight: 700;
+        }
+        .box {
+          height: 22.5rem;
+          background-color: #112029;
+        }
+      }
+    }
+  }
+  .content2 {
+    margin-top: 1rem;
+    padding: 2rem;
+    border-top: 5px solid #ccc;
+    .btn {
+      font-size: 1.4rem;
+      color: #fff;
+    }
+    .btn.active {
+      color: #fff;
+      background-color: #188b66;
+      border: solid 1px #188b66;
+    }
+    div#myTabContent {
+      padding: 2rem;
+      font-size: 1.2rem;
+      .list-item {
+        max-height: 20rem;
+        overflow-y: auto;
+        .item {
+          height: 6rem;
+          border-bottom: 1px solid #82848a;
+        }
+      }
+      .list-item::-webkit-scrollbar {
+        width: 0; /* Ẩn thanh cuộn ngang trên trình duyệt Chrome, Safari */
+      }
+    }
+  }
+}

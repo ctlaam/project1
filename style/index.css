@@ -1,0 +1,14 @@
+.index .header {
+  padding: 1rem 5rem;
+}
+.index .logo img {
+  height: 2rem;
+}
+.index .carousel-index img.d-block.w-100 {
+  width: 100%;
+  height: 15rem;
+  object-fit: fill;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=index.css.map */
