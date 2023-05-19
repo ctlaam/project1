@@ -165,7 +165,7 @@
               >
             </li>
           </ul>
-          <div class="tab-content" id="myTabContent">
+          <div class="tab-content motive-market" id="myTabContent">
             <div
               class="tab-pane fade show active"
               id="list-wishes"
@@ -309,6 +309,78 @@
                   <p>38565.55</p>
                   <p>5/18</p>
                 </div>
+                <div class="item-table">
+                  <p>****0012321365</p>
+                  <p>USTD</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
+                <div class="item-table">
+                  <p>****065653565</p>
+                  <p>BTC</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
+                <div class="item-table">
+                  <p>****0012321365</p>
+                  <p>USTD</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
+                <div class="item-table">
+                  <p>****065653565</p>
+                  <p>BTC</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
+                <div class="item-table">
+                  <p>****0012321365</p>
+                  <p>USTD</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
+                <div class="item-table">
+                  <p>****065653565</p>
+                  <p>BTC</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
+                <div class="item-table">
+                  <p>****0012321365</p>
+                  <p>USTD</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
+                <div class="item-table">
+                  <p>****065653565</p>
+                  <p>BTC</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
+                <div class="item-table">
+                  <p>****0012321365</p>
+                  <p>USTD</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
+                <div class="item-table">
+                  <p>****065653565</p>
+                  <p>BTC</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
+                <div class="item-table">
+                  <p>****0012321365</p>
+                  <p>USTD</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
+                <div class="item-table">
+                  <p>****065653565</p>
+                  <p>BTC</p>
+                  <p>38565.55</p>
+                  <p>5/18</p>
+                </div>
               </div>
             </div>
           </div>
@@ -344,4 +416,25 @@
       </div>
     </div>
   </body>
+  <script>
+    let element = document.querySelectorAll(
+      ".motive-market .list-item-table .item-table"
+    );
+    var initialValue = 100;
+
+    // Giảm dần translateY
+    var interval = setInterval(function () {
+      initialValue -= 1; // Giảm giá trị mỗi lần
+      element.forEach((e) => {
+        if (e.style) {
+          e.style.transform = "translateY(" + initialValue + "px)";
+        }
+      });
+
+      if (initialValue == -100) {
+        initialValue = 100; // Gán lại giá trị ban đầu
+        // element.style.transform = "translateY(" + initialValue + "px)";
+      }
+    }, 50); // Thời gian giữa các bước giảm là 1000ms (1 giây)
+  </script>
 </html>

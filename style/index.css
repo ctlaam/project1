@@ -83,6 +83,10 @@
 .index .main-container .third-line #profile .list-item-table {
   max-height: 22rem;
   overflow-y: auto;
+  transition: transform 0.05s ease-in-out;
+}
+.index .main-container .third-line #profile .list-item-table:hover {
+  transform: translateY(-10px);
 }
 .index .main-container .third-line #profile .list-item-table::-webkit-scrollbar {
   width: 0; /* Ẩn thanh cuộn ngang trên trình duyệt Chrome, Safari */
@@ -92,6 +96,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 1.2rem;
+  transition: transform 0.5s ease-in-out;
 }
 .index .main-container .third-line #profile .item-table p:nth-child(1) {
   color: #1135dc;

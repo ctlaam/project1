@@ -51,7 +51,7 @@
       }
     }
     .third-line {
-      padding:0 2rem;
+      padding: 0 2rem;
       ul#myTab {
         width: 100%;
         li.nav-item {
@@ -81,6 +81,10 @@
         .list-item-table {
           max-height: 22rem;
           overflow-y: auto;
+          transition: transform 0.05s ease-in-out;
+        }
+        .list-item-table:hover {
+          transform: translateY(-10px);
         }
         .list-item-table::-webkit-scrollbar {
           width: 0; /* Ẩn thanh cuộn ngang trên trình duyệt Chrome, Safari */
@@ -90,6 +94,8 @@
           align-items: center;
           justify-content: space-between;
           font-size: 1.2rem;
+          transition: transform 0.5s ease-in-out;
+
           p:nth-child(1) {
             color: #1135dc;
           }
