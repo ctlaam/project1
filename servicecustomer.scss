@@ -1,15 +1,16 @@
 #service {
-  padding: 0 2.5rem;
   background-color: #111423;
   width: 100vw;
   height: 100vh;
   position: relative;
   .logo {
+    padding: 0 2.5rem;
+
     text-align: center;
     padding: 2rem;
   }
   .list-service {
-    padding-top: 1.5rem;
+    padding: 1.5 4rem;
     min-height: 30rem;
     background-image: -webkit-gradient(
       linear,
@@ -39,6 +40,43 @@
     }
     span.name-service {
       margin-left: 1rem;
+    }
+  }
+  .footer-info {
+    position: fixed;
+    height: 50px;
+    background: rgb(27, 30, 47);
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    .item {
+      text-align: center;
+      .icon {
+        font-size: 2rem;
+      }
+      .title {
+        font-size: 1.4rem;
+      }
+    }
+    .item.active {
+      color: #1890ff;
+    }
+    .have-active {
+      display: none;
+    }
+    .no-active {
+      display: block;
+    }
+    .active {
+      .no-active {
+        display: none;
+      }
+      .have-active {
+        display: block;
+      }
     }
   }
 }
