@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nạp tiền</title>
+    <title>Ví của tôi</title>
     <link rel="stylesheet" href="./style/app.css" />
     <link rel="stylesheet" href="./style/login.css" />
     <link rel="stylesheet" href="./style/withdraw.css" />
     <link rel="stylesheet" href="./style/recharge.css" />
+    <link rel="stylesheet" href="./style/wallet.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -39,7 +40,7 @@
     ></script>
   </head>
   <body>
-    <div id="login-form" class="withdraw recharge">
+    <div id="login-form" class="withdraw recharge wallet">
       <div class="container mx-auto">
         <div class="logo-login mx-auto">
           <img src="./assets/logo.png" class="logo" alt="" srcset="" />
@@ -48,55 +49,48 @@
         <div class="total-money">
           <p>Tổng tài sản tương đương <i class="fa-solid fa-eye"></i></p>
           <h1 class="money">100000</h1>
-        </div>
-        <div class="main-withdraw">
-          <h2>Chọn phương thức nạp tiền</h2>
-          <div class="method">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="exampleRadios"
-              id="exampleRadios1"
-              value="option1"
-              checked
-            />
-            <label class="form-check-label" for="exampleRadios1">
-              Nạp tiền USTD
-            </label>
-          </div>
-          <div class="method">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="exampleRadios"
-              id="exampleRadios2"
-              value="option1"
-              checked
-            />
-            <label class="form-check-label" for="exampleRadios2">
-              Thẻ ngân hàng
-            </label>
-          </div>
-          <br>
-          <h2>Loại ví</h2>
-          <div class="input">
-            <input value="USTD" readonly type="text" />
-          </div>
-          <h2>Địa chỉ tài khoản</h2>
-          <div class="input">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <input value="RuiBTC" readonly type="password" />
-          </div>
-          <h2>Vui lòng nhập số tiền tín dụng</h2>
-          <div class="input">
-            <i class="fa-solid fa-money-bill"></i>
-            <input
-              placeholder="Vui lòng nhập số tiền tín dụng"
-              type="password"
-            />
+          <div class="methods-money">
+            <div class="recharge btn">
+              <i class="fa-solid fa-light fa-download"></i>
+              <span>Nạp tiền</span>
+            </div>
+            <div class="withdraw btn">
+              <i class="fa-solid fa-light fa-credit-card"></i>
+              <span>Rút tiền</span>
+            </div>
           </div>
         </div>
-        <button type="button" class="btn btn-primary">Gửi đi</button>
+        <div class="main-withdraw list-wallet">
+          <br />
+          <h2>Ví của tôi (2)</h2>
+          <div class="item-wallet">
+            <div class="item">
+                <div class="name">
+                    <img src="./assets/btc.png" width="40" alt="">
+                    <span>USTD</span>
+                </div>
+                <div>099999999999</div>
+                <div>Nguyễn Văn Đăng</div>
+            </div>
+            <div class="item">
+              <div class="name">
+                  <img src="./assets/btc.png" width="40" alt="">
+                  <span>USTD</span>
+              </div>
+              <div>099999999999</div>
+              <div>Nguyễn Văn Đăng</div>
+          </div>
+          <div class="item">
+            <div class="name">
+                <img src="./assets/btc.png" width="40" alt="">
+                <span>USTD</span>
+            </div>
+            <div>099999999999</div>
+            <div>Nguyễn Văn Đăng</div>
+        </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary">Thêm phương thức rút tiền khác</button>
       </div>
       <div></div>
     </div>
