@@ -233,3 +233,53 @@
     }
   }
 }
+.list-option-select {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 45rem;
+  padding: 3rem 2rem;
+  display: flex;
+  div#v-pills-tab {
+    border-right: 1px solid #ccc;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    a {
+      width: 12rem;
+    }
+  }
+  div#v-pills-tabContent {
+    padding: 2rem;
+    width: 100%;
+    .list-select {
+      width: 100%;
+      .option {
+        height: 8rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background-size: 100% 100%;
+        color: #fff;
+      }
+      .option:first-child {
+        background-image: url(https://ba.ruibcs.com/kaptcha/20220719b5a072e5-53e7-47ca-a806-547e45026bc5.png);
+      }
+      .option:nth-child(2) {
+        background-image: url(https://ba.ruibcs.com/kaptcha/20210502e9600314-fbce-456a-9a11-797620826df9.png);
+      }
+      .option:nth-child(3) {
+        background-image: url(https://ba.ruibcs.com/kaptcha/2021050206fe1257-e378-4fc1-b01a-4a2387f316fc.png);
+      }
+      .option:nth-child(4) {
+        background-image: url(https://ba.ruibcs.com/kaptcha/20221206dbe143be-3116-4a90-b417-77b905ac5012.png);
+      }
+    }
+  }
+  div.tab-pane.fade {
+    color: #000;
+  }
+}
