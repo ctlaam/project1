@@ -96,7 +96,6 @@
   align-items: center;
   justify-content: space-between;
   font-size: 1.2rem;
-  transition: transform 0.5s ease-in-out;
 }
 .index .main-container .third-line #profile .item-table p:nth-child(1) {
   color: #1135dc;
@@ -158,6 +157,20 @@
   height: 15rem;
   object-fit: fill;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .index .main-container .first-line .item {
+    width: 49rem;
+  }
+  .index .main-container .third-line .tab-content .list-item .item {
+    height: 5rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .index .main-container .first-line .item {
+    width: 36rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
