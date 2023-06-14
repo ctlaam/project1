@@ -6,6 +6,7 @@ div#info {
   width: 100vw;
   height: 100vh;
   position: relative;
+  overflow-y: hidden;
   .logo {
     text-align: center;
     padding: 2rem;
@@ -140,7 +141,7 @@ div#info {
   }
   .mail {
     float: right;
-    font-size: 32px;
+    font-size: 3.2rem;
     cursor: pointer;
     opacity: 0.8;
     &:hover {

@@ -70,7 +70,7 @@
         border: solid 1px #82848a;
         margin-bottom: 1rem;
         input[type="number"] {
-          font-size: 16px;
+          font-size: 1.6rem;
           background-color: transparent;
           outline: none;
           border: none;
@@ -281,5 +281,31 @@
   }
   div.tab-pane.fade {
     color: #000;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .invest .content .part1 .list-item {
+    max-height: 17rem;
+    overflow-y: auto;
+  }
+  .invest .content {
+    padding: 2rem;
+    height: 35rem;
+  }
+  .invest .content .part2 .end-part2 .box {
+    height: 7.5rem;
+    background-color: #112029;
+  }
+  .invest .content {
+    padding: 1rem;
+    }
+  .invest .header {
+    padding: 1rem;
+  }
+  .invest .content2 {
+    margin-top: 0rem;
+    padding: 2rem;
+    border-top: 5px solid #ccc;
   }
 }

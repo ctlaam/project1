@@ -6,6 +6,7 @@ div#info {
   width: 100vw;
   height: 100vh;
   position: relative;
+  overflow-y: hidden;
 }
 div#info .logo {
   text-align: center;
@@ -135,7 +136,7 @@ div#info .footer-info .active .have-active {
 }
 div#info .mail {
   float: right;
-  font-size: 32px;
+  font-size: 3.2rem;
   cursor: pointer;
   opacity: 0.8;
 }
